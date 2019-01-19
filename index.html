@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Konexio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <!--need to put in an order-->
+    <!--changer la police du texte page totale-->
+    <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico" />
+    <!--type="image/png" href="./img/BIMO.png"-->
+</head>
+
+
+<body>
+    <nav class="bg-info navbar navbar-expand-lg fixed-top">
+        <h2>
+            <a class="navbar-brand" href="#header">Konexio</a>
+        </h2>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" href="#students">Etudiants</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#volunteers">Bénévoles</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#gallery">Les EPN</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#team">L'équipe</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <input type="search" placeholder="Search..." size="13"><button name="Search">Search</button>&nbsp;
+            <button class="btn btn-outline-light my-2 my-sm-0" type="button" data-toggle="modal" data-target="#modal1"
+                data-whatever="@bimo">Login</button>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Se connecter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="@bimo">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Password:</label>
+                            <input type="password" class="form-control" id="message-text"></input>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin de modal -->
+
+    <section id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-6 col-sm-12">
+                    <h1>Konexio </h1>
+                    <p>Aider les réfugiés à s'intégrer grâce au numérique&nbsp;</p>
+                </div>
+                <aside class="col-lg-3 col-md-6 col-sm-12">
+                    <form style="border-width:3px" action="index.html">
+                        <h4>Programme Digistart</h4>
+                        <label>s'inscrire à la prochaine session</label>
+                        <select class="custom-select" name="month">
+                            <option value="">Choisir</option>
+
+                            <option value="Janvier">
+                                Janvier
+                            </option>
+                            <option value="Mars">
+                                Mars
+                            </option>
+                            <option value="Juin">
+                                Juin
+                            </option>
+                            <option value="Septembre">
+                                Septembre
+                            </option>
+                        </select>
+                        <button disabled class="btn btn-info" type="submit">M'inscrire</button>
+                    </form>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!--/section#header-->
+    <section class="bg-info" id="students">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img class="img-fluid" src="./img/student.jpg" /></div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p>Apprenez à utiliser un ordinateur, les outils de bureautiques ou à programmer. Chacune de nos
+                        formations est abouti à une certification</p>
+                    <button class="btn btn-outline-light">Je veux étudier</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--fin /section#students-->
+    <section id="volunteers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p>Vous avez envie d'aider des personnes qui cherchent à apprendre et à s'intégrer ? Si vous avez
+                        des connaissances en informatique de bureau, sur Excel ou en programmation, envoyez nous un
+                        message. &nbsp;</p>
+                    <button class="btn btn-outline-dark">Je veux aider</button>
+                    <p> </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img class="img-fluid" src="./img/volunteer.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/section#volunteers-->
+    <section class="bg-info" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-12">
+                    <div class="swiper-container">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="img-fluid" src="./img/gallery/gallery1.jpg" /></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./img/gallery/gallery2.jpg" /></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./img/gallery/gallery4.jpg" /></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--/section#gallery-->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>L'Equipe</h2>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 team-member"><img src="./img/people/jean.jpg" />
+                    <h4>Jean Guo</h4>
+                    <h6>Fondatrice &amp; gérante</h6>
+                </div>
+                <!--la fin du div-->
+                <div class="col-lg-4 col-md-4 col-sm-12 team-member"><img src="./img/people/binta.jpg" />
+                    <h4>Binta Jammeh</h4>
+                    <h6>Directrice des programs</h6>
+                </div>
+                <!--la fin du div-->
+                <div class="col-lg-4 col-md-4 col-sm-12 team-member"><img src="./img/people/denis.jpg" />
+                    <h4>Denis Robert</h4>
+                    <h6>Formateur</h6>
+                </div>
+                <!--la fin du div-->
+            </div>
+        </div>
+    </section>
+    <!--/section#team-->
+    <section id="contact form">
+        <div class="container">
+            <h1>Vous voulez nous contacter?</h1><br>
+            <label for="t1">Faites nous part de votre projet</label><br>
+            <input type="text" name="Prénom" placeholder="Prénom" minlength="2" maxlength="12" size="11"><br>
+            <input type="text" placeholder="Votre adresse mail" size="73"><br>
+            <textarea placeholder="Votre message..." rows="5" cols="75"></textarea>
+            <div><button type="submit">Envoyer</button><br></div>
+        </div>
+    </section>
+    <!--/section#contact form-->
+    <footer class="bg-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 footer-list">
+                    <h3>Konexio</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Mentions légales</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Vie privée</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Conditions d"utilisations</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--fin colonne-->
+                <div class="col-6 footer-list">
+                    <h3>Réseaux sociaux</h3>
+                    <ul>
+                        <li>
+                            <i class="fab fa-instagram"></i><a href="#"> Instagram</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <i class="fab fa-twitter"></i><a href="#"> Twitter</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <i class="fab fa-facebook"></i><a href="#"> Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--fin colonne-->
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+        const REC = 11;
+        console.log(REC);
+    </script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="./js/bootstrap.min.js"></script> -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/scripts.js">  </script>
+    <script>
+        jQuery(() => {
+            jQuery("select").on("change", e => {
+                const value = e.target.value;
+                const subscribeBtn = $("form button");
+
+                if (value !== "") {
+                    subscribeBtn.attr("disabled", false);
+                } else {
+                    subscribeBtn.attr("disabled", true);
+                }
+            });
+        });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

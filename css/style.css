@@ -1,0 +1,164 @@
+/**
+After generation of woff files, you have to define font-family, which can be used later in all your css styles. Below is the code to define font families (for normal, bold, bold-italic, italic) typefaces. It is assumed, that there are 4 *.woff files (for mentioned typefaces), placed in fonts subdirectory.
+In CSS code:
+@font-face {
+    font-family: "myfont";
+    src: url("fonts/awesome-font.woff") format('woff');
+}**/
+@font-face {
+    font-family: "titre";
+    src: url("../fonts/Airbnb_Cereal-Bold.woff") format('woff');}
+@font-face {
+    font-family: "texte";
+    src: url("../fonts/Airbnb_Cereal-Book.woff") format('woff');
+  }
+body {
+	font-family: "texte";
+}
+h1 {
+	font-family: "titre";
+}
+h2 {
+	font-family: "titre";
+	font-weight: normal;
+}
+h3 {
+	font-family: "titre";
+}
+p {
+    font-family: "texte";
+	font-style: normal;
+	font-weight: normal;
+}
+a
+{
+color:white;
+} 
+/* dont know if can be incarné */
+    a:hover { border: 1px black solid; }
+    a:active { font: bold; color: aqua;}
+    a:visited { font: italic; color: aqua; }
+
+nav
+{
+    box-shadow: 10px 5px 5px #095010;
+}
+img
+{
+    box-shadow: 10px 5px 5px cadetblue;
+}
+nav .col-4
+{
+    text-align:center;
+}
+form 
+{ 
+   background-color: white;
+   color: black;
+    padding-top: 40px;
+    padding-bottom:40px;
+    padding-left:30px;
+    padding-right:3px;
+    border-radius: 10px;
+}
+
+
+/**BASE STYLE**/
+.bg-info{background-color:#0475ba !important;}
+.btn-info{background-color: #0475ba !important;}
+section
+{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+form
+{
+    background-color:white;
+    color:black;
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left: 30px;
+    padding-right:30px;
+    border-radius:10px;
+}
+button
+{
+    margin-top:10px;
+}
+/**HEADER
+#header
+{
+    background-image:url(../img/header.jpg);
+    background-color:black;
+    min-height:700px;
+    color:white;
+    padding-top:160px;
+}**/
+#header {
+    background-image: url(../img/header.jpg);
+    background-position: center 60px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #000;
+    padding-top: 70px;
+    min-height: 700px;
+    color: #fff;
+  }
+#header p
+{
+    font-size:2em;
+}
+/**SECTIONS**/
+#students p
+{
+    color:white;
+    padding-top:100px;
+}
+#students img
+{
+    border-radius:5px;
+}
+#volunteers p
+{
+    padding-top:100px;
+}
+#students img
+{
+    border-radius:5px;
+}
+/**TEAM**/
+#team
+{
+    padding-top: 80px;
+}
+#team .col-6,.team-member
+{
+    text-align:center;
+}
+#team img
+{
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+#team h6
+{
+    color:#0475ba;
+}
+/**PIED DE PAGE**/
+footer
+{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+footer ul
+{
+list-style:none; 
+}
+footer h3
+{
+    margin-left: 39px;
+}
+
+

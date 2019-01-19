@@ -1,0 +1,83 @@
+/**BASE STYLE**/
+section
+{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+a
+{
+color:white;
+}
+a:hover { border: 1px black solid }
+a:active { font: bold; color: aqua }
+a:visited { font: italic; color: aqua }
+form
+{
+    background-color:white;
+    color:black;
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left: 30px;
+    padding-right:30px;
+    border-radius:10px;
+    
+}
+button
+{
+    margin-top:10px;
+}
+/**HEADER**/
+#header
+{
+    background-image:url(../img/header.jpg);
+    background-color:black;
+    min-height:700px;
+    color:white;
+    padding-top:160px;
+}
+#header p
+{
+    font-size:2em;
+}
+/**SECTIONS**/
+#students p
+{
+    color:white;
+    padding-top:100px;
+}
+#students img
+{
+    border-radius:5px;
+}
+#volunteers p
+{
+    padding-top:100px;
+}
+#students img
+{
+    border-radius:5px;
+}
+/**TEAM**/
+#team
+.col-6,.team-member
+{
+    text-align:center;
+}
+#team img
+{
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+#team h6
+{
+    color:#0475ba;
+}
+/**PIED DE PAGE**/
+footer
+{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+.bg-info{background-color: red !important}
